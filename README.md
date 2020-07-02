@@ -15,6 +15,9 @@ Especificações
 * Para Popular a Base execute na raiz do projeto execute o comando:   rails dev:setup
 
 * Para executar os testes execute na raiz do projeto o camando: rspec
+
+* Para executar o projeto execute na raiz do projeto o comando: rails s
+
 * As requisições via Postman estão disponivel no arquivo Desafio.postman_collection.json na raiz do projeto
 
 
@@ -22,9 +25,9 @@ Sobre o Desafio
 
 Desenvolver uma API de Cadastro de produtos e pedidos para a loja do “seu” Manuel.
 
-Foi criado os recursos:
+Foram criados os recursos:
 
-products
+**products
 
 Responsável por cadastrar, consultar, atualizar e deletar produtos.
 
@@ -32,7 +35,8 @@ Cada produto possui um código identificador único SKU, e possui os atributos:
 
  nome, descrição preço e preço_promocional e quantidade.
 
-orders
+
+**orders
 
 Responsável por cadastrar, consultar, atualizar e *deletar pedidos.
 
@@ -46,7 +50,7 @@ No método PUT é permitido apenas atualizar o status do pedido.
 
 Não permitir o delete de pedidos e validar status finalizadores
 
-reports
+**reports
 
 Responsável por retornar um relatório de ticket médio por um período especificado.
 
