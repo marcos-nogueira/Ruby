@@ -1,9 +1,8 @@
 # README
 
-Esse projeto foi desenvolvido com base no Desafio para desenvolvedor - Processo de recrutamento SkyHub B2W.
+Esse projeto foi desenvolvido com base no Desafio para desenvolvedor de uma grande empresa, alem de motivar estudos e aperfeiçoamentos.
 
-Para esse projetos foi escolhido o framework Ruby on Rails e o banco de dados MongoDB
-pela praticidade e familiaridade.
+Para esse projetos foi escolhido o framework Ruby on Rails e o banco de dados MongoDB.
 
 
 Especificações
