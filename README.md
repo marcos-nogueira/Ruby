@@ -24,6 +24,8 @@ Sobre o Desafio
 
 Desenvolver uma API de Cadastro de produtos e pedidos para a loja do “seu” Manuel.
 
+Todo o código deve estar coberto por testes automáticos. 
+
 Foram criados os recursos:
 
 **products
