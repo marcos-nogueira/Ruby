@@ -1,0 +1,28 @@
+current directory: /home/marcos/workspace/marcos-code-challenge/vendor/ruby/2.5.0/gems/bson-4.5.0/ext/bson
+/home/marcos/.rvm/rubies/ruby-2.5.1/bin/ruby -I /home/marcos/.rvm/rubies/ruby-2.5.1/lib/ruby/site_ruby/2.5.0 -r ./siteconf20200702-6508-m37ecv.rb extconf.rb
+creating Makefile
+
+current directory: /home/marcos/workspace/marcos-code-challenge/vendor/ruby/2.5.0/gems/bson-4.5.0/ext/bson
+make "DESTDIR=" clean
+
+current directory: /home/marcos/workspace/marcos-code-challenge/vendor/ruby/2.5.0/gems/bson-4.5.0/ext/bson
+make "DESTDIR="
+compiling bson_native.c
+In file included from bson_native.c:21:
+native-endian.h:196:15: warning: ‘__bson_double_swap_slow’ defined but not used [-Wunused-function]
+  196 | static double __bson_double_swap_slow(double v)
+      |               ^~~~~~~~~~~~~~~~~~~~~~~
+native-endian.h:169:17: warning: ‘__bson_uint64_swap_slow’ defined but not used [-Wunused-function]
+  169 | static uint64_t __bson_uint64_swap_slow(uint64_t v)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+native-endian.h:145:17: warning: ‘__bson_uint32_swap_slow’ defined but not used [-Wunused-function]
+  145 | static uint32_t __bson_uint32_swap_slow(uint32_t v)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+cc1: warning: unrecognized command line option ‘-Wno-self-assign’
+cc1: warning: unrecognized command line option ‘-Wno-constant-logical-operand’
+cc1: warning: unrecognized command line option ‘-Wno-parentheses-equality’
+linking shared-object bson_native.so
+
+current directory: /home/marcos/workspace/marcos-code-challenge/vendor/ruby/2.5.0/gems/bson-4.5.0/ext/bson
+make "DESTDIR=" install
+/usr/bin/install -m 0755 bson_native.so ./.gem.20200702-6508-nlumne

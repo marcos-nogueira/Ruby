@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "4b31e338-2813-44b9-a168-7694087685c2",
+		"name": "Desafio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST  product Exemplo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n\"description\": \"NESCAU PRONTINHO 3X200ML NESTLE\",\n\"name\": \"NESCAU PRONTINHO 3X200ML NESTLE\",\n\"price\": 4.99,\n\"promotional_price\": 4.55,\n\"qty\": 99,\n\"sku\": \"teste200\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/products/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Report Exemplo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/reports?inicio=2019-09-01&fim=2019-09-30",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"reports"
+					],
+					"query": [
+						{
+							"key": "inicio",
+							"value": "2019-09-01"
+						},
+						{
+							"key": "fim",
+							"value": "2019-09-30"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Report Sem Parametros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/reports",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"reports"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " GET orders Exemplo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"status\": \"ENT\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/orders/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT orders status Exemplo",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"status\": \"canceled\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/orders/pedido-02",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders",
+						"pedido-02"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post order Exemplo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"code\": \"pedido-0200\",\n\t\"data\": \"2019-09-09T03:00:00\",\n\t\"custumer\": \"Marcos\",\n\t\"status\": \"new\",\n\t\"shipping_cost\":\"10\",\n\t\"items\": [{\"sku\": \"teste02\",\"qty\": 2, \"price\":100.00}],\n\t\"total\": 210.00\n\t\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
